@@ -1,2 +1,4 @@
 .jbeval
 .env
+.venv
+.idea
