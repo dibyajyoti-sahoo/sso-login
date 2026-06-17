@@ -22,7 +22,7 @@ import uvicorn
 
 load_dotenv()
 
-SUPERTOKENS_BASE = os.environ.get("SUPERTOKENS_BASE", "http://supertokens:3567")
+SUPERTOKENS_BASE = os.environ.get("SUPERTOKENS_BASE")
 API_KEY = os.environ.get("SUPERTOKENS_API_KEY", "")
 CDI_VERSION = os.environ.get("CDI_VERSION", "4.0")
 ALLOWED_ORIGINS = os.environ.get("ALLOWED_ORIGINS", "*").split(",")
