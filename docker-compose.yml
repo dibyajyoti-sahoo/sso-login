@@ -1,0 +1,17 @@
+services:
+  py-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: py-server
+    ports:
+      - "13245:13245"
+    env_file:
+      - .env
+    networks:
+      - supertokens-network
+    restart: unless-stopped
+
+networks:
+  supertokens-network:
+    external: true
